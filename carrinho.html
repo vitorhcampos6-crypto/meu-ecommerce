@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Carrinho - Meu E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Meu E-commerce</a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="carrinho.html" class="active">Carrinho 🛒</a>
+                <a href="cadastro.html">Entrar/Cadastrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container cart-page-layout">
+   
+        <section class="cart-table-container">
+            <table class="cart-table">
+                <caption>Seus itens selecionados</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Item 1 -->
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img src="chuteira10.jpg" alt="Chuteira top flex">
+                                <div>
+                                    <strong>Chuteira Joma </strong><br>
+                                    <small>joma/small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 279,90</td>
+                        <td><input type="number" min="1" value="1"></td>
+                        <td>R$ 279,90</td>
+                        <td><button class="btn-remove">🗑️</button></td>
+                    </tr>
+                    <!-- Item 2 -->
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img src="joelheira2.jpg" alt="Chuteira joma top flex">
+                                <div>
+                                    <strong>joelheira</strong><br>
+                                    <small>mania de futsal</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 120,00</td>
+                        <td><input type="number" min="1" value="1"></td>
+                        <td>R$ 120,00</td>
+                        <td><button class="btn-remove">🗑️</button></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img src="cotoveleira.jpg" alt="Chuteira joma top flex">
+                                <div>
+                                    <strong>cotoveleira</strong><br>
+                                    <small>mania de futsal</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 80,00</td>
+                        <td><input type="number" min="1" value="1"></td>
+                        <td>R$ 80,00</td>
+                        <td><button class="btn-remove">🗑️</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="free-shipping-note">
+                            🎉 Parabéns! Você ganhou <strong>Frete Grátis</strong> nesta compra.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <aside class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span>R$ 479,90</span>
+            </div>
+            <div class="summary-row">
+                <span>Frete:</span>
+                <span class="free-badge">Grátis</span>
+            </div>
+            <div class="coupon-container">
+                <label for="coupon-input" class="sr-only">Cupom de Desconto</label>
+                <input type="text" id="coupon-input" placeholder="Cupom de Desconto">
+                <button type="button">Aplicar</button>
+            </div>
+            <hr>
+            <div class="summary-row total-row">
+                <span>Total:</span>
+                <span>R$ 479,90</span>
+            </div>
+            <a href="cadastro.html" class="btn-checkout">Finalizar Compra →</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu E-commerce. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja de Chuteiras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <!-- O logotipo agora também volta para a página inicial -->
+        <a href="index.html">
+            <img src="Logochuteira.png" alt="Logotipo Oficial - Silhueta de uma chuteira preta esportiva" class="logo-transparente" width="150" height="50">
+        </a>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Promoções</a></li>
+                <!-- Conexão para a página de Cadastro no menu -->
+                <li><a href="cadastro.html">Entrar/Cadastrar</a></li>
+                <!-- Conexão real para o arquivo carrinho.html -->
+                <li><a href="carrinho.html" class="btn-carrinho-topo">🛒 Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-carrossel">
+        <div class="carrossel-container">
+            <div class="carrossel-item">
+                <img src="chuteira1.jpg" alt="Nova coleção de chuteiras profissionais com 10% de desconto" width="1200" height="400">
+            </div>
+            <div class="carrossel-item">
+                <img src="chuteira2.jpg" alt="Frete grátis em toda a linha esportiva acima de R$199" width="1200" height="400">
+            </div>
+            <div class="carrossel-item">
+                <img src="chuteira3.jpg" alt="Super Outlet de Chuteiras com descontos de até 50%" width="1200" height="400">
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias-secao">
+        <h2 class="categorias-titulo">Navegue por Categorias</h2>
+        <div class="categorias-container">
+            <div class="categoria-item">
+                <div class="categoria-imagem-wrapper">
+                    <img src="chuteira4.jpg" alt="Categoria Lançamentos" class="categoria-img" loading="lazy" width="130" height="130">
+                </div>
+                <span class="categoria-nome">Lançamentos</span>
+            </div>
+            <div class="categoria-item">
+                <div class="categoria-imagem-wrapper">
+                    <img src="imagemdesconto.jpg" alt="Categoria Ofertas" class="categoria-img" loading="lazy" width="130" height="130">
+                </div>
+                <span class="categoria-nome">Ofertas</span>
+            </div>
+            <div class="categoria-item">
+                <div class="categoria-imagem-wrapper">
+                    <img src="joelheira.jpg" alt="Categoria Acessórios" class="categoria-img" loading="lazy" width="130" height="130">
+                </div>
+                <span class="categoria-nome">Acessórios</span>
+            </div>
+            <div class="categoria-item">
+                <div class="categoria-imagem-wrapper">
+                    <img src="chuteira7.jpg" alt="Categoria Mais Vendidos" class="categoria-img" loading="lazy" width="130" height="130">
+                </div>
+                <span class="categoria-nome">Mais Vendidos</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="vitrine-secao">
+        <h2 class="vitrine-titulo">Nossos Produtos</h2>
+        <div class="produtos-grid">
+            <!-- Produto 1: Linkado para abrir a página de detalhes -->
+            <article class="produto-card">
+                <a href="produto.html" style="text-decoration: none; color: inherit;">
+                    <figure class="produto-foto-container">
+                        <img src="chuteira8.jpg" alt="Chuteira Campo Pro azul de travas altas" class="produto-img" loading="lazy" width="300" height="300">
+                    </figure>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Chuteira Campo Pro</h3>
+                        <p class="produto-preco">R$ 99,90</p>
+                </a>
+                        <!-- Botão modificado para enviar direto ao carrinho -->
+                        <a href="carrinho.html" class="btn-comprar" style="display: block; text-align: center; text-decoration: none;">Comprar</a>
+                    </div>
+            </article>
+
+            <!-- Produto 2: Linkado para abrir a página de detalhes -->
+            <article class="produto-card">
+                <a href="produto.html" style="text-decoration: none; color: inherit;">
+                    <figure class="produto-foto-container">
+                        <img src="chuteira9.jpg" alt="Chuteira Salão Clássica preta em couro sintético" class="produto-img" loading="lazy" width="300" height="300">
+                    </figure>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Chuteira Salão Clássica</h3>
+                        <p class="produto-preco">R$ 149,90</p>
+                </a>
+                        <a href="carrinho.html" class="btn-comprar" style="display: block; text-align: center; text-decoration: none;">Comprar</a>
+                    </div>
+            </article>
+
+            <!-- Produto 3: Linkado para abrir a página de detalhes -->
+            <article class="produto-card">
+                <a href="produto.html" style="text-decoration: none; color: inherit;">
+                    <figure class="produto-foto-container">
+                        <img src="chuteira10.jpg" alt="Chuteira Society Neon verde com microtravas" class="produto-img" loading="lazy" width="300" height="300">
+                    </figure>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Chuteira Society Neon</h3>
+                        <p class="produto-preco">R$ 79,90</p>
+                </a>
+                        <a href="carrinho.html" class="btn-comprar" style="display: block; text-align: center; text-decoration: none;">Comprar</a>
+                    </div>
+            </article>
+
+            <!-- Produto 4: Linkado para abrir a página de detalhes -->
+            <article class="produto-card">
+                <a href="produto.html" style="text-decoration: none; color: inherit;">
+                    <figure class="produto-foto-container">
+                        <img src="chuteira11.jpg" alt="Tênis Performance Walk masculino cinza" class="produto-img" loading="lazy" width="300" height="300">
+                    </figure>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Tênis Performance Walk</h3>
+                        <p class="produto-preco">R$ 199,90</p>
+                </a>
+                        <a href="carrinho.html" class="btn-comprar" style="display: block; text-align: center; text-decoration: none;">Comprar</a>
+                    </div>
+            </article>
+
+            <!-- Produto 5: Linkado para abrir a página de detalhes -->
+            <article class="produto-card">
+                <a href="produto.html" style="text-decoration: none; color: inherit;">
+                    <figure class="produto-foto-container">
+                        <img src="chuteira12.jpg" alt="Chuteira Infantil Storm vermelha" class="produto-img" loading="lazy" width="300" height="300">
+                    </figure>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Chuteira Infantil Storm</h3>
+                        <p class="produto-preco">R$ 129,90</p>
+                </a>
+                        <a href="carrinho.html" class="btn-comprar" style="display: block; text-align: center; text-decoration: none;">Comprar</a>
+                    </div>
+            </article>
+
+            <!-- Produto 6 (Esgotado) -->
+            <article class="produto-card produto-esgotado">
+                <figure class="produto-foto-container">
+                    <span class="etiqueta-esgotado">ESGOTADO</span>
+                    <img src="chuteira13.jpg" alt="Chuteira Ouro de Colecionador dourada" class="produto-img" loading="lazy" width="300" height="300">
+                </figure>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Chuteira Ouro de Colecionador</h3>
+                    <p class="produto-preco">R$ 59,90</p>
+                    <button class="btn-comprar" disabled>Indisponível</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+</body>
+</html>
